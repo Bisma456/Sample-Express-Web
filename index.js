@@ -19,15 +19,15 @@ const app = express();
         // res.send('<h2>AboutUs<h2>')
         res.sendFile(path.join(__dirname, 'public','index.html'))
     })
-    // app.get("/aboutus", (req,res)=>{
-    //     // res.send('<h2>AboutUs<h2>')
-    //     res.sendFile(path.join(__dirname, 'public','aboutus.html'))
-    // })
+    app.get("/aboutus", (req,res)=>{
+        // res.send('<h2>AboutUs<h2>')
+        res.sendFile(path.join(__dirname, 'public','aboutus.html'))
+    })
 
-    // app.get("/contactus", (req,res)=>{
-    //     // res.send('<h2>AboutUs<h2>')
-    //     res.sendFile(path.join(__dirname, 'public','contactus.html'))
-    // })
+    app.get("/contactus", (req,res)=>{
+        // res.send('<h2>AboutUs<h2>')
+        res.sendFile(path.join(__dirname, 'public','contactus.html'))
+    })
     app.get("/signup", (req,res)=>{
         // res.send('<h2>AboutUs<h2>')
           res.sendFile(path.join(__dirname, 'registration','signup.html'))
